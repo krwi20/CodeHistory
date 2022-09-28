@@ -30,26 +30,19 @@ struct ContentView: View {
                      .multilineTextAlignment(.leading)
                  Spacer()
                  HStack {
-                     Button(action: {
-                         print("Tapped on Choice 1")
-                     }, label: {
-                         ChoiceTextView(choiceText: question.possibleAnswers[0]) // Updated from hard-coded string
-                     })
-                     Button(action: {
-                         print("Tapped on Choice 2")
-                     }, label: {
-                         ChoiceTextView(choiceText: question.possibleAnswers[1]) // Updated from hard-coded string
-                     })
-                     Button(action: {
-                         print("Tapped on Choice 3")
-                     }, label: {
-                         ChoiceTextView(choiceText: question.possibleAnswers[2]) // Updated from hard-coded string
-                     })
-                     Button(action: {
-                         print("Tapped on Choice 4")
-                     }, label: {
-                         ChoiceTextView(choiceText: question.possibleAnswers[3]) // Updated from hard-coded string
-                     })
+                     
+                     /* The definition starts with ForEach(). Within the parentheses, we provide the data we want to loop through. In our case, it’s a Range from 0 to the last index of possibleAnswers. Following that, we write an open curly brace and answerIndex in followed by a new line. Just like we would in a for-in loop, we give a name to the placeholder variable. Here, answerIndex will start at 0, then be assigned to 1, then 2, then 3. We can name this placeholder variable anything we like. */
+                     
+                     ForEach(0..<question.possibleAnswers.count) { answerIndex in
+                         
+                         Button(action: {
+                             print("Tappes on option with the text: \(question.possibleAnswers[answerIndex])")
+                         }, label: {
+                             ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
+                         })
+                         
+                     }
+                     
                  }
              }
          }
