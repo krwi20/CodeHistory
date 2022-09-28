@@ -14,7 +14,9 @@ struct ContentView: View {
     possibleAnswers: ["Ant", "Beetle", "Moth", "Fly"],
     correctAnswerIndex: 2) // instance of Question
     
-    let mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
+    /* The State property wrapper allows us to tell SwiftUI that one of the properties of our View can change. When we wrap a variable with the @State declaration, we are telling SwiftUI, “This variable can change. Update the screen if it does.” Then, when we assign a new value to any properties we have marked with @State, SwiftUI will compute the body property again to redraw the screen with the updated data. In our case, we want SwiftUI to update all of our views whenever the mainColor property changes (like when the user taps one of the buttons). */
+    
+    @State var mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
     
     var body: some View {
         ZStack {
@@ -37,6 +39,7 @@ struct ContentView: View {
                          
                          Button(action: {
                              print("Tappes on option with the text: \(question.possibleAnswers[answerIndex])")
+                             mainColor = answerIndex == question.correctAnswerIndex ? .green : .red
                          }, label: {
                              ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
                          })
