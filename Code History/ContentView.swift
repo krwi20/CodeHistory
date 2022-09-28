@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
+    let question = Question(
+    questionText: "What was the first computer bug?",
+    possibleAnswers: ["Ant", "Beetle", "Moth", "Fly"],
+    correctAnswerIndex: 2) // instance of Question
+    
     let mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
-    let accentColor = Color(red: 48/255, green: 105/255, blue: 240/255)
     
     var body: some View {
         ZStack {
@@ -20,7 +24,7 @@ struct ContentView: View {
                      .font(.callout)
                      .multilineTextAlignment(.leading)
                      .padding()
-                 Text("What was the first computer bug?")
+                 Text(question.questionText) // Updated from hard-coded string
                      .font(.largeTitle)
                      .bold()
                      .multilineTextAlignment(.leading)
@@ -29,42 +33,22 @@ struct ContentView: View {
                      Button(action: {
                          print("Tapped on Choice 1")
                      }, label: {
-                         Text("Ant")
-                             .font(.body)
-                             .bold()
-                             .multilineTextAlignment(.center)
-                             .padding()
-                             .border(accentColor, width: 4)
+                         ChoiceTextView(choiceText: question.possibleAnswers[0]) // Updated from hard-coded string
                      })
                      Button(action: {
                          print("Tapped on Choice 2")
                      }, label: {
-                         Text("Beetle")
-                             .font(.body)
-                             .bold()
-                             .multilineTextAlignment(.center)
-                             .padding()
-                             .border(accentColor, width: 4)
+                         ChoiceTextView(choiceText: question.possibleAnswers[1]) // Updated from hard-coded string
                      })
                      Button(action: {
                          print("Tapped on Choice 3")
                      }, label: {
-                         Text("Moth")
-                             .font(.body)
-                             .bold()
-                             .multilineTextAlignment(.center)
-                             .padding()
-                             .border(accentColor, width: 4)
+                         ChoiceTextView(choiceText: question.possibleAnswers[2]) // Updated from hard-coded string
                      })
                      Button(action: {
                          print("Tapped on Choice 4")
                      }, label: {
-                         Text("Fly")
-                             .font(.body)
-                             .bold()
-                             .multilineTextAlignment(.center)
-                             .padding()
-                             .border(accentColor, width: 4)
+                         ChoiceTextView(choiceText: question.possibleAnswers[3]) // Updated from hard-coded string
                      })
                  }
              }

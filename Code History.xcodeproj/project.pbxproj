@@ -14,6 +14,8 @@
 		FE42D14528E0F5ED001CF856 /* Code_HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42D14428E0F5ED001CF856 /* Code_HistoryTests.swift */; };
 		FE42D14F28E0F5ED001CF856 /* Code_HistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42D14E28E0F5ED001CF856 /* Code_HistoryUITests.swift */; };
 		FE42D15128E0F5ED001CF856 /* Code_HistoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42D15028E0F5ED001CF856 /* Code_HistoryUITestsLaunchTests.swift */; };
+		FEC6357228E49CDE00024ACF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6357128E49CDE00024ACF /* Question.swift */; };
+		FEC6357428E49F1B00024ACF /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6357328E49F1B00024ACF /* ChoiceTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		FE42D14A28E0F5ED001CF856 /* Code HistoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Code HistoryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE42D14E28E0F5ED001CF856 /* Code_HistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_HistoryUITests.swift; sourceTree = "<group>"; };
 		FE42D15028E0F5ED001CF856 /* Code_HistoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_HistoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FEC6357128E49CDE00024ACF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		FEC6357328E49F1B00024ACF /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				FE42D13528E0F5EB001CF856 /* ContentView.swift */,
 				FE42D13728E0F5ED001CF856 /* Assets.xcassets */,
 				FE42D13928E0F5ED001CF856 /* Preview Content */,
+				FEC6357128E49CDE00024ACF /* Question.swift */,
+				FEC6357328E49F1B00024ACF /* ChoiceTextView.swift */,
 			);
 			path = "Code History";
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC6357228E49CDE00024ACF /* Question.swift in Sources */,
 				FE42D13628E0F5EB001CF856 /* ContentView.swift in Sources */,
+				FEC6357428E49F1B00024ACF /* ChoiceTextView.swift in Sources */,
 				FE42D13428E0F5EB001CF856 /* Code_HistoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
