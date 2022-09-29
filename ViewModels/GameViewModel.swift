@@ -50,4 +50,8 @@ class GameViewModel: ObservableObject { // the view model will emit events when 
         }
     }
     
+    var gameIsOver: Bool {
+        game.isOver
+    }
+    
 }
