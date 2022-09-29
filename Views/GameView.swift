@@ -33,6 +33,7 @@ struct GameView: View {
              }
          }
         .foregroundColor(.white)
+        .environmentObject(viewModel)
     }
 }
 
