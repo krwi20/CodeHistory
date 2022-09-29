@@ -54,4 +54,12 @@ class GameViewModel: ObservableObject { // the view model will emit events when 
         game.isOver
     }
     
+    var correctGuesses: Int {
+        game.guessCount.correct
+    }
+    
+    var incorrectGuesses: Int {
+        game.guessCount.incorrect
+    }
+    
 }
