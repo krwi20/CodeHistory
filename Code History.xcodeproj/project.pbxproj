@@ -21,6 +21,7 @@
 		FEC6357C28E533A900024ACF /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6357B28E533A900024ACF /* GameColor.swift */; };
 		FEC6357E28E5348800024ACF /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6357D28E5348800024ACF /* BottomTextView.swift */; };
 		FEC6358128E538D000024ACF /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6358028E538D000024ACF /* GameViewModel.swift */; };
+		FEC6358328E53B7700024ACF /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6358228E53B7700024ACF /* QuestionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		FEC6357B28E533A900024ACF /* GameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColor.swift; sourceTree = "<group>"; };
 		FEC6357D28E5348800024ACF /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
 		FEC6358028E538D000024ACF /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		FEC6358228E53B7700024ACF /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				FEC6357928E531A700024ACF /* WelcomeView.swift */,
 				FEC6357B28E533A900024ACF /* GameColor.swift */,
 				FEC6357D28E5348800024ACF /* BottomTextView.swift */,
+				FEC6358228E53B7700024ACF /* QuestionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC6358328E53B7700024ACF /* QuestionView.swift in Sources */,
 				FEC6358128E538D000024ACF /* GameViewModel.swift in Sources */,
 				FEC6357228E49CDE00024ACF /* Question.swift in Sources */,
 				FEC6357A28E531A700024ACF /* WelcomeView.swift in Sources */,

@@ -22,33 +22,14 @@ struct GameView: View {
         ZStack {
             GameColor.main.ignoresSafeArea() // otherwise safe areas will be default white
             VStack {
-                VStack {
+
                 Text(viewModel.questionProgressText)
                     .font(.callout)
                     .multilineTextAlignment(.leading)
                     .padding()
-                Text(question.questionText)
-                    .font(.largeTitle)
-                    .bold()
-                    .multilineTextAlignment(.leading)
-            }
-            Spacer()
-                 HStack {
-                     
-                     /* The definition starts with ForEach(). Within the parentheses, we provide the data we want to loop through. In our case, it’s a Range from 0 to the last index of possibleAnswers. Following that, we write an open curly brace and answerIndex in followed by a new line. Just like we would in a for-in loop, we give a name to the placeholder variable. Here, answerIndex will start at 0, then be assigned to 1, then 2, then 3. We can name this placeholder variable anything we like. */
-                     
-                     ForEach(0..<question.possibleAnswers.count) { answerIndex in
-                         
-                         Button(action: {
-                             print("Tapped on option with the text: \(question.possibleAnswers[answerIndex])")
-                             
-                         }, label: {
-                             ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
-                         })
-                         
-                     }
-                     
-                 }
+                
+                QuestionView(question: viewModel.currentQuestion)
+
              }
          }
         .foregroundColor(.white)
